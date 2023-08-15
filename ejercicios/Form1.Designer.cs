@@ -29,44 +29,127 @@ namespace ejercicios
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnConvertirConversores = new System.Windows.Forms.Button();
+            this.lblDeConversores = new System.Windows.Forms.Label();
+            this.cboDeConversores = new System.Windows.Forms.ComboBox();
+            this.txtCantidadConversores = new System.Windows.Forms.TextBox();
+            this.cboAConversores = new System.Windows.Forms.ComboBox();
+            this.lblAConversores = new System.Windows.Forms.Label();
+            this.lblCantidadConversores = new System.Windows.Forms.Label();
+            this.lblRespuestaConversores = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnConvertirConversores
             // 
-            this.button1.Location = new System.Drawing.Point(86, 161);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 93);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnConvertirConversores.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConvertirConversores.Location = new System.Drawing.Point(75, 263);
+            this.btnConvertirConversores.Name = "btnConvertirConversores";
+            this.btnConvertirConversores.Size = new System.Drawing.Size(192, 92);
+            this.btnConvertirConversores.TabIndex = 0;
+            this.btnConvertirConversores.Text = "Convertir";
+            this.btnConvertirConversores.UseVisualStyleBackColor = true;
+            this.btnConvertirConversores.Click += new System.EventHandler(this.btnConvertirConversores_Click);
             // 
-            // label1
+            // lblDeConversores
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 97);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lblDeConversores.AutoSize = true;
+            this.lblDeConversores.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeConversores.Location = new System.Drawing.Point(71, 64);
+            this.lblDeConversores.Name = "lblDeConversores";
+            this.lblDeConversores.Size = new System.Drawing.Size(42, 22);
+            this.lblDeConversores.TabIndex = 1;
+            this.lblDeConversores.Text = "DE:";
             // 
-            // textBox1
+            // cboDeConversores
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.cboDeConversores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDeConversores.FormattingEnabled = true;
+            this.cboDeConversores.Items.AddRange(new object[] {
+            "Dolar",
+            "Euro",
+            "Quetzal",
+            "Lempira",
+            "Cordova",
+            "Colon SV",
+            "Colon CR",
+            "Yenes",
+            "Rupia India",
+            "Libras Esterlinas"});
+            this.cboDeConversores.Location = new System.Drawing.Point(121, 65);
+            this.cboDeConversores.Name = "cboDeConversores";
+            this.cboDeConversores.Size = new System.Drawing.Size(146, 21);
+            this.cboDeConversores.TabIndex = 2;
+            // 
+            // txtCantidadConversores
+            // 
+            this.txtCantidadConversores.Location = new System.Drawing.Point(167, 161);
+            this.txtCantidadConversores.Name = "txtCantidadConversores";
+            this.txtCantidadConversores.Size = new System.Drawing.Size(100, 20);
+            this.txtCantidadConversores.TabIndex = 3;
+            // 
+            // cboAConversores
+            // 
+            this.cboAConversores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAConversores.FormattingEnabled = true;
+            this.cboAConversores.Items.AddRange(new object[] {
+            "Dolar",
+            "Euro",
+            "Quetzal",
+            "Lempira",
+            "Cordova",
+            "Colon SV",
+            "Colon CR",
+            "Yenes",
+            "Rupia India",
+            "Libras Esterlinas"});
+            this.cboAConversores.Location = new System.Drawing.Point(121, 111);
+            this.cboAConversores.Name = "cboAConversores";
+            this.cboAConversores.Size = new System.Drawing.Size(146, 21);
+            this.cboAConversores.TabIndex = 5;
+            // 
+            // lblAConversores
+            // 
+            this.lblAConversores.AutoSize = true;
+            this.lblAConversores.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAConversores.Location = new System.Drawing.Point(71, 110);
+            this.lblAConversores.Name = "lblAConversores";
+            this.lblAConversores.Size = new System.Drawing.Size(28, 22);
+            this.lblAConversores.TabIndex = 4;
+            this.lblAConversores.Text = "A:";
+            // 
+            // lblCantidadConversores
+            // 
+            this.lblCantidadConversores.AutoSize = true;
+            this.lblCantidadConversores.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadConversores.Location = new System.Drawing.Point(71, 157);
+            this.lblCantidadConversores.Name = "lblCantidadConversores";
+            this.lblCantidadConversores.Size = new System.Drawing.Size(90, 22);
+            this.lblCantidadConversores.TabIndex = 6;
+            this.lblCantidadConversores.Text = "Cantidad:";
+            // 
+            // lblRespuestaConversores
+            // 
+            this.lblRespuestaConversores.AutoSize = true;
+            this.lblRespuestaConversores.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRespuestaConversores.Location = new System.Drawing.Point(71, 209);
+            this.lblRespuestaConversores.Name = "lblRespuestaConversores";
+            this.lblRespuestaConversores.Size = new System.Drawing.Size(123, 22);
+            this.lblRespuestaConversores.TabIndex = 7;
+            this.lblRespuestaConversores.Text = "Respuesta: ?";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(372, 447);
+            this.Controls.Add(this.lblRespuestaConversores);
+            this.Controls.Add(this.lblCantidadConversores);
+            this.Controls.Add(this.cboAConversores);
+            this.Controls.Add(this.lblAConversores);
+            this.Controls.Add(this.txtCantidadConversores);
+            this.Controls.Add(this.cboDeConversores);
+            this.Controls.Add(this.lblDeConversores);
+            this.Controls.Add(this.btnConvertirConversores);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -76,9 +159,14 @@ namespace ejercicios
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnConvertirConversores;
+        private System.Windows.Forms.Label lblDeConversores;
+        private System.Windows.Forms.ComboBox cboDeConversores;
+        private System.Windows.Forms.TextBox txtCantidadConversores;
+        private System.Windows.Forms.ComboBox cboAConversores;
+        private System.Windows.Forms.Label lblAConversores;
+        private System.Windows.Forms.Label lblCantidadConversores;
+        private System.Windows.Forms.Label lblRespuestaConversores;
     }
 }
 

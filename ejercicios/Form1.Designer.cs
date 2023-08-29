@@ -130,12 +130,7 @@ namespace ejercicios
             this.cboTipoConversor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTipoConversor.FormattingEnabled = true;
             this.cboTipoConversor.Items.AddRange(new object[] {
-            "Moneda",
-            "Masa ",
-            "Volumen",
-            "Longitud",
-            "Almacenamiento",
-            "Tiempo"});
+            "Area"});
             this.cboTipoConversor.Location = new System.Drawing.Point(166, 57);
             this.cboTipoConversor.Margin = new System.Windows.Forms.Padding(4);
             this.cboTipoConversor.Name = "cboTipoConversor";
